@@ -1,0 +1,189 @@
+{% load static %}
+
+
+<div id="preloader">
+    <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>  
+<div class="latest-products">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>Latest Gift Cards</h2>
+          <a href="products.html">view all gift card </a>
+        </div>
+      </div>
+      {% for i in offers %} 
+      <div class="col-md-4">
+        
+        <div class="product-item">
+    
+          
+          <a href="#"><img src="{{ i.images.url }}" alt=""></a>
+          <div class="down-content">
+            
+            <a href="#"><h4>{{ i.title }}</h4></a>
+            <!-- <h6>{{ i.review }}</h6> -->
+            <p>{{ i.description }}</p>
+            <a href="{{ i.link }}">Click here</a>
+            
+            
+          </div>
+          
+        </div>
+        
+      </div>
+      {% endfor %}
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="best-features">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading">
+          <h2>We will give best way to win Gift</h2>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="left-content">
+          <h4>Looking for the best Gift Cards?</h4>
+          <p>The Paypal Gift Card Giveaway program is an easy way t
+            o get free Paypal money. With this program, you can enter your em
+            ail address to be entered into a daily drawing. Each day, someone is 
+            randomly selected to win a $25 Paypal gift card. You can then use the 
+            card to buy products online or send money to friends and family members.</p>
+
+          <a href="about.html" class="filled-button">Read More</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="right-image">
+          <img src="{% static 'images/f.jpg' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+  <!-- Footer -->
+  <footer class="text-center text-white" style="background-color: #3f51b5">
+    <!-- Grid container -->
+    <div class="container">
+      <!-- Section: Links -->
+      <section class="mt-5">
+        <!-- Grid row-->
+        <div class="row text-center d-flex justify-content-center pt-5">
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">About us</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Products</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Awards</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Help</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-2">
+            <h6 class="text-uppercase font-weight-bold">
+              <a href="#!" class="text-white">Contact</a>
+            </h6>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </section>
+      <!-- Section: Links -->
+
+      <hr class="my-5" />
+
+      <!-- Section: Text -->
+      <section class="mb-5">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8">
+            <p style="color: aliceblue;">
+              We Manage Payments and Provide Corporate and Individual Project-Level Reporting. We Can Help You 
+              Choose from More than 5,000 Projects in 160+ Countries.
+               Personalized Gifts. Fully Customize-able. Give A Unique Gift.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Social -->
+      <section class="text-center mb-5">
+        <a href="" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </section>
+      <!-- Section: Social -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(247, 247, 247, 0.2)"
+         >
+      © 2020 Copyright:
+
+      
+         >MDBootstrap.com</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+</div>
+<!-- End of .container -->
